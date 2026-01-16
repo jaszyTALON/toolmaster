@@ -1,0 +1,57 @@
+appId: com.toolmaster.app
+productName: ToolMaster
+directories:
+  buildResources: public
+  output: dist
+
+files:
+  - from: .next/standalone
+    to: app/.next/standalone
+  - from: .next/static
+    to: app/.next/static
+  - from: public
+    to: public
+  - from: node_modules
+    to: node_modules
+  - package.json
+
+win:
+  target:
+    - nsis
+    - portable
+  certificateFile: null
+  certificatePassword: null
+  signingHashAlgorithms:
+    - sha256
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: ToolMaster
+  installerIcon: public/icon.ico
+  uninstallerIcon: public/icon.ico
+  installerHeaderIcon: public/icon.ico
+  packElevationArtifacts: true
+
+# Mac configuration (optional)
+mac:
+  target:
+    - dmg
+    - zip
+  category: public.app-category.productivity
+  icon: public/icon.icns
+
+# Linux configuration (optional)
+linux:
+  target:
+    - AppImage
+    - deb
+  category: Utility
+  icon: public/icon.png
+
+publish:
+  provider: github
+  owner: your-username
+  repo: toolmaster
