@@ -1,0 +1,71 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                  String               @id @default(cuid())
+  email               String               @unique
+  password            String
+  name                String?
+  createdAt           DateTime             @default(now())
+  updatedAt           DateTime             @updatedAt
+  magazineSettings    MagazineSettings?
+  passwordResetTokens PasswordResetToken[]
+  tools               Tool[]
+}
+
+model Tool {
+  id          String     @id @default(cuid())
+  slotNumber  Int
+  toolNumber  Int
+  name        String
+  type        String?
+  description String?
+  status      ToolStatus @default(READY)
+  lifePercent Int        @default(100)
+  userId      String
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  user        User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, slotNumber])
+  @@index([userId])
+}
+
+model MagazineSettings {
+  id             String   @id @default(cuid())
+  userId         String   @unique
+  currentInSlot  Int      @default(1)
+  currentOutSlot Int      @default(4)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model PasswordResetToken {
+  id        String    @id @default(cuid())
+  email     String
+  token     String    @unique
+  expiresAt DateTime
+  used      Boolean   @default(false)
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+  userId    String?
+  user      User?     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([email])
+  @@index([token])
+}
+
+enum ToolStatus {
+  READY
+  ACTIVE
+  WARNING
+  EMPTY
+  MAINTENANCE
+}
