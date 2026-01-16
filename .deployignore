@@ -1,0 +1,37 @@
+# Deployment ignore file
+# Only include necessary files for deployment
+
+# Development files
+*.log
+.DS_Store
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+
+# Test files
+coverage/
+.nyc_output/
+
+# Documentation (optional - keep if needed)
+*.md
+!README.md
+
+# Electron files (not needed for web)
+dist/
+*.exe
+*.dmg
+*.AppImage
+
+# Keep these critical files
+!package.json
+!package-lock.json
+!next.config.ts
+!tsconfig.json
+!prisma/
+!src/
+!public/
+!.env.example
