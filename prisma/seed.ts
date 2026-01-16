@@ -1,4 +1,4 @@
-import { PrismaClient, ToolStatus } from '@prisma/client';
+import { PrismaClient } from '@prisma/client';
 import bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
@@ -41,7 +41,7 @@ async function main() {
       toolNumber: 1,
       name: 'Carbide Drill 5mm',
       type: 'Drill',
-      status: 'READY' as ToolStatus,
+      status: 'READY',
       lifePercent: 85,
     },
     {
@@ -49,7 +49,7 @@ async function main() {
       toolNumber: 2,
       name: 'Face Mill 50mm',
       type: 'Mill',
-      status: 'READY' as ToolStatus,
+      status: 'READY' ,
       lifePercent: 92,
     },
     {
@@ -57,7 +57,7 @@ async function main() {
       toolNumber: 3,
       name: 'Tap M6',
       type: 'Tap',
-      status: 'WARNING' as ToolStatus,
+      status: 'WARNING' ,
       lifePercent: 12,
     },
     {
@@ -65,7 +65,7 @@ async function main() {
       toolNumber: 4,
       name: 'Reamer 10mm',
       type: 'Reamer',
-      status: 'ACTIVE' as ToolStatus,
+      status: 'ACTIVE' ,
       lifePercent: 100,
     },
     {
@@ -73,7 +73,7 @@ async function main() {
       toolNumber: 5,
       name: '-- EMPTY --',
       type: '--',
-      status: 'EMPTY' as ToolStatus,
+      status: 'EMPTY' ,
       lifePercent: 0,
     },
     {
@@ -81,7 +81,7 @@ async function main() {
       toolNumber: 6,
       name: 'End Mill 8mm',
       type: 'Mill',
-      status: 'READY' as ToolStatus,
+      status: 'READY' ,
       lifePercent: 78,
     },
     {
@@ -89,7 +89,7 @@ async function main() {
       toolNumber: 7,
       name: 'Center Drill',
       type: 'Drill',
-      status: 'READY' as ToolStatus,
+      status: 'READY' ,
       lifePercent: 95,
     },
     {
@@ -97,7 +97,7 @@ async function main() {
       toolNumber: 8,
       name: 'Ball End Mill 6mm',
       type: 'Mill',
-      status: 'READY' as ToolStatus,
+      status: 'READY' ,
       lifePercent: 68,
     },
     {
@@ -105,7 +105,7 @@ async function main() {
       toolNumber: 9,
       name: 'Boring Bar 20mm',
       type: 'Bore',
-      status: 'MAINTENANCE' as ToolStatus,
+      status: 'MAINTENANCE' ,
       lifePercent: 5,
     },
     {
@@ -113,7 +113,7 @@ async function main() {
       toolNumber: 10,
       name: 'Chamfer Mill 45°',
       type: 'Mill',
-      status: 'READY' as ToolStatus,
+      status: 'READY' ,
       lifePercent: 88,
     },
     {
@@ -121,7 +121,7 @@ async function main() {
       toolNumber: 11,
       name: 'Spot Drill 90°',
       type: 'Drill',
-      status: 'READY' as ToolStatus,
+      status: 'READY' ,
       lifePercent: 72,
     },
     {
@@ -129,7 +129,7 @@ async function main() {
       toolNumber: 12,
       name: 'Carbide Drill 8mm',
       type: 'Drill',
-      status: 'ACTIVE' as ToolStatus,
+      status: 'ACTIVE' ,
       lifePercent: 60,
     },
   ];

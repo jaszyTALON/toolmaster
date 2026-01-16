@@ -1,0 +1,107 @@
+
+> toolmaster@1.0.0 build
+> next build && electron-builder -w
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /datadrive/AC/code/avery-claude/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/package-lock.json
+
+▲ Next.js 16.1.2 (Turbopack)
+- Environments: .env
+
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+  Creating an optimized production build ...
+✓ Compiled successfully in 12.3s
+  Running TypeScript ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/17) ...
+  Generating static pages using 7 workers (4/17) 
+  Generating static pages using 7 workers (8/17) 
+  Generating static pages using 7 workers (12/17) 
+✓ Generating static pages using 7 workers (17/17) in 554.2ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ƒ /api/auth/[...nextauth]
+├ ƒ /api/auth/password-reset/confirm
+├ ƒ /api/auth/password-reset/request
+├ ƒ /api/auth/password-reset/verify
+├ ƒ /api/auth/register
+├ ƒ /api/magazine
+├ ƒ /api/tools
+├ ƒ /api/tools/export
+├ ƒ /api/tools/import
+├ ○ /dashboard
+├ ○ /forgot-password
+├ ○ /login
+├ ○ /register
+└ ○ /reset-password
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
+  • electron-builder  version=26.4.0 os=6.14.0-1017-azure
+  • loaded configuration  file=/datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/electron-builder.yml
+  • @electron/rebuild already used by electron-builder, please consider to remove excess dependency from devDependencies
+
+To ensure your native dependencies are always matched electron version, simply add script `"postinstall": "electron-builder install-app-deps" to your `package.json`
+  ⨯ Invalid configuration object. electron-builder 26.4.0 has been initialized using a configuration object that does not match the API schema.
+ - configuration.nsis has an unknown property 'packElevationArtifacts'. These properties are valid:
+   object { allowElevation?, allowToChangeInstallationDirectory?, artifactName?, buildUniversalInstaller?, createDesktopShortcut?, createStartMenuShortcut?, customNsisBinary?, customNsisResources?, deleteAppDataOnUninstall?, differentialPackage?, displayLanguageSelector?, guid?, include?, installerHeader?, installerHeaderIcon?, installerIcon?, installerLanguages?, installerSidebar?, language?, license?, menuCategory?, multiLanguageInstaller?, oneClick?, packElevateHelper?, perMachine?, preCompressedFileExtensions?, publish?, removeDefaultUninstallWelcomePage?, runAfterFinish?, script?, selectPerMachineByDefault?, shortcutName?, unicode?, uninstallDisplayName?, uninstallUrlHelp?, uninstallUrlInfoAbout?, uninstallUrlReadme?, uninstallUrlUpdateInfo?, uninstallerIcon?, uninstallerSidebar?, useZip?, warningsAsErrors? }
+     How to fix:
+     1. Open https://www.electron.build/nsis
+     2. Search the option name on the page (or type in into Search to find across the docs).
+       * Not found? The option was deprecated or not exists (check spelling).
+       * Found? Check that the option in the appropriate place. e.g. "title" only in the "dmg", not in the root.
+
+ - configuration.win should be one of these:
+   object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? } | null
+   -> Options related to how build Windows targets.
+   Details:
+    * configuration.win has an unknown property 'certificateFile'. These properties are valid:
+      object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? }
+    * configuration.win has an unknown property 'certificatePassword'. These properties are valid:
+      object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? }
+    * configuration.win has an unknown property 'signingHashAlgorithms'. These properties are valid:
+      object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? }
+     How to fix:
+     1. Open https://www.electron.build/win
+     2. Search the option name on the page (or type in into Search to find across the docs).
+       * Not found? The option was deprecated or not exists (check spelling).
+       * Found? Check that the option in the appropriate place. e.g. "title" only in the "dmg", not in the root.
+  failedTask=build stackTrace=ValidationError: Invalid configuration object. electron-builder 26.4.0 has been initialized using a configuration object that does not match the API schema.
+ - configuration.nsis has an unknown property 'packElevationArtifacts'. These properties are valid:
+   object { allowElevation?, allowToChangeInstallationDirectory?, artifactName?, buildUniversalInstaller?, createDesktopShortcut?, createStartMenuShortcut?, customNsisBinary?, customNsisResources?, deleteAppDataOnUninstall?, differentialPackage?, displayLanguageSelector?, guid?, include?, installerHeader?, installerHeaderIcon?, installerIcon?, installerLanguages?, installerSidebar?, language?, license?, menuCategory?, multiLanguageInstaller?, oneClick?, packElevateHelper?, perMachine?, preCompressedFileExtensions?, publish?, removeDefaultUninstallWelcomePage?, runAfterFinish?, script?, selectPerMachineByDefault?, shortcutName?, unicode?, uninstallDisplayName?, uninstallUrlHelp?, uninstallUrlInfoAbout?, uninstallUrlReadme?, uninstallUrlUpdateInfo?, uninstallerIcon?, uninstallerSidebar?, useZip?, warningsAsErrors? }
+     How to fix:
+     1. Open https://www.electron.build/nsis
+     2. Search the option name on the page (or type in into Search to find across the docs).
+       * Not found? The option was deprecated or not exists (check spelling).
+       * Found? Check that the option in the appropriate place. e.g. "title" only in the "dmg", not in the root.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       - configuration.win should be one of these:
+   object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? } | null
+   -> Options related to how build Windows targets.
+   Details:
+    * configuration.win has an unknown property 'certificateFile'. These properties are valid:
+      object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? }
+    * configuration.win has an unknown property 'certificatePassword'. These properties are valid:
+      object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? }
+    * configuration.win has an unknown property 'signingHashAlgorithms'. These properties are valid:
+      object { appId?, artifactName?, asar?, asarUnpack?, azureSignOptions?, compression?, cscKeyPassword?, cscLink?, defaultArch?, detectUpdateChannel?, disableDefaultIgnoredFiles?, electronLanguages?, electronUpdaterCompatibility?, executableName?, extraFiles?, extraResources?, fileAssociations?, files?, forceCodeSigning?, generateUpdatesFilesForAllChannels?, icon?, legalTrademarks?, protocols?, publish?, releaseInfo?, requestedExecutionLevel?, signAndEditExecutable?, signExts?, signtoolOptions?, target?, verifyUpdateCodeSignature? }
+     How to fix:
+     1. Open https://www.electron.build/win
+     2. Search the option name on the page (or type in into Search to find across the docs).
+       * Not found? The option was deprecated or not exists (check spelling).
+       * Found? Check that the option in the appropriate place. e.g. "title" only in the "dmg", not in the root.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          at validate (/datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/node_modules/@develar/schema-utils/dist/validate.js:86:11)
+    at validateConfiguration (/datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/node_modules/app-builder-lib/src/util/config/config.ts:239:3)
+    at Packager.validateConfig (/datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/node_modules/app-builder-lib/src/packager.ts:398:5)
+    at Packager.build (/datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/node_modules/app-builder-lib/src/packager.ts:406:5)
+    at executeFinally (/datadrive/AC/code/avery-claude/uploads/3a3aaecb-169a-4350-9bb3-9c171cfa55a9/node_modules/builder-util/src/promise.ts:12:14)
