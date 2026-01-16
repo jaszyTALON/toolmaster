@@ -1,7 +1,9 @@
 {
-  "name": "3a3aaecb-169a-4350-9bb3-9c171cfa55a9",
-  "version": "0.1.0",
+  "name": "toolmaster",
+  "version": "1.0.0",
   "private": true,
+  "description": "12-Position Rotary Tool Changer - Industrial tool magazine management system",
+  "author": "ToolMaster",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
