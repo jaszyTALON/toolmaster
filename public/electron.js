@@ -39,14 +39,32 @@ function createWindow() {
     mainWindow.loadURL('http://localhost:3000');
     mainWindow.webContents.openDevTools();
   } else {
-    // In production, load the built Next.js app
-    const indexPath = path.join(__dirname, '../app/.next/standalone/public/index.html');
-    if (fs.existsSync(indexPath)) {
-      mainWindow.loadFile(indexPath);
-    } else {
-      // Fallback to loading from app directory
-      mainWindow.loadURL(`file://${path.join(__dirname, '../app/public/index.html')}`);
-    }
+    // In production, start Next.js production server
+    const { spawn } = require('child_process');
+    const nextBin = path.join(__dirname, '../node_modules/.bin/next.cmd');
+
+    const nextServer = spawn(nextBin, ['start', '-p', '3000'], {
+      cwd: path.join(__dirname, '..'),
+      shell: true,
+    });
+
+    nextServer.stdout.on('data', (data) => {
+      console.log(`Next.js: ${data}`);
+    });
+
+    nextServer.stderr.on('data', (data) => {
+      console.error(`Next.js Error: ${data}`);
+    });
+
+    // Wait for server to be ready, then load
+    setTimeout(() => {
+      mainWindow.loadURL('http://localhost:3000');
+    }, 3000);
+
+    // Clean up server when app closes
+    app.on('before-quit', () => {
+      nextServer.kill();
+    });
   }
 
   mainWindow.on('closed', () => {

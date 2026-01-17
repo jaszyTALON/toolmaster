@@ -5,7 +5,8 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
   serverExternalPackages: ['@prisma/client', 'bcryptjs'],
-  output: 'standalone',
+  // Removed 'output: standalone' - doesn't work well with Electron
+  // Default Next.js build mode works better for desktop apps
 };
 
 export default nextConfig;
