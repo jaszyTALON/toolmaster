@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "search": "Rechercher",
+    "export": "Exporter",
+    "import": "Importer",
+    "print": "Imprimer",
+    "analytics": "Analytique",
+    "configure": "Configurer les Outils"
+  },
+  "dashboard": {
+    "title": "Tableau de bord ToolMaster",
+    "searchPlaceholder": "Rechercher des outils par nom ou desc...",
+    "loadingMagazine": "Chargement des données du magazine..."
+  },
+  "magazine": {
+    "inPosition": "Position IN",
+    "outPosition": "Position OUT",
+    "slot": "Emplacement",
+    "tool": "Outil",
+    "toolName": "Nom de l'Outil",
+    "type": "Type",
+    "description": "Description",
+    "status": "Statut",
+    "life": "Durée de vie",
+    "position": "Position",
+    "magazineOverview": "Aperçu du Magazine",
+    "toolList": "Liste des Outils",
+    "totalTools": "Total des Outils",
+    "currentTool": "Outil Actuel"
+  },
+  "rotation": {
+    "rotateCW": "Tourner CW",
+    "rotateCCW": "Tourner CCW",
+    "goToSlot": "ALLER à l'Emplacement",
+    "rotatedTo": "Tourné vers l'emplacement"
+  },
+  "status": {
+    "ready": "Prêt",
+    "active": "Actif",
+    "warning": "Avertissement",
+    "empty": "Vide",
+    "maintenance": "Maintenance"
+  },
+  "toolConfig": {
+    "title": "Configuration de l'Outil",
+    "slotNumber": "Numéro d'Emplacement",
+    "toolNumber": "Numéro d'Outil",
+    "toolName": "Nom de l'Outil",
+    "toolType": "Type d'Outil",
+    "toolDescription": "Description",
+    "toolStatus": "Statut",
+    "toolLife": "Durée de vie de l'Outil (%)",
+    "updateSuccess": "Outil mis à jour avec succès",
+    "updateFailed": "Échec de la mise à jour de l'outil"
+  },
+  "report": {
+    "toolReport": "Rapport de Magazine d'Outils",
+    "reportDate": "Date du Rapport",
+    "generatedBy": "Généré par",
+    "printedOn": "Imprimé le",
+    "page": "Page"
+  },
+  "toast": {
+    "exportSuccess": "Configuration exportée",
+    "exportFailed": "Échec de l'exportation",
+    "importSuccess": "Configuration importée avec succès",
+    "importFailed": "Échec de l'importation",
+    "loadFailed": "Échec du chargement des données",
+    "saveFailed": "Échec de l'enregistrement de la rotation"
+  }
+}

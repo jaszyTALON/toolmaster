@@ -6,6 +6,8 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { Disc, Home, Settings, LogOut, HelpCircle, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { TranslationProvider } from '@/lib/translations';
+import { LanguageSwitcher } from '@/components/language-switcher';
 
 export default function DashboardLayout({
   children,
@@ -38,13 +40,14 @@ export default function DashboardLayout({
   }
 
   return (
-    <div className="min-h-screen w-full bg-[#020617] text-slate-50 overflow-hidden relative selection:bg-[#38bdf8]/30">
-      {/* Atmospheric Backgrounds */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-gradient-to-br from-[#38bdf8]/20 via-transparent to-transparent blur-[120px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[35vw] h-[35vw] rounded-full bg-gradient-to-tl from-[#f59e0b]/15 via-transparent to-transparent blur-[100px]" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] rounded-full bg-[#94a3b8]/5 blur-[150px]" />
-      </div>
+    <TranslationProvider>
+      <div className="min-h-screen w-full bg-[#020617] text-slate-50 overflow-hidden relative selection:bg-[#38bdf8]/30">
+        {/* Atmospheric Backgrounds */}
+        <div className="fixed inset-0 pointer-events-none z-0">
+          <div className="absolute top-[-10%] left-[-10%] w-[40vw] h-[40vw] rounded-full bg-gradient-to-br from-[#38bdf8]/20 via-transparent to-transparent blur-[120px]" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-[35vw] h-[35vw] rounded-full bg-gradient-to-tl from-[#f59e0b]/15 via-transparent to-transparent blur-[100px]" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[50vw] h-[50vw] rounded-full bg-[#94a3b8]/5 blur-[150px]" />
+        </div>
 
       <div className="relative z-10 flex h-screen">
         {/* Sidebar */}
@@ -116,8 +119,11 @@ export default function DashboardLayout({
               <span className="text-white font-medium">Magazine Control</span>
             </div>
 
-            <div className="text-xs text-slate-500">
-              12-Position Rotary Tool Changer
+            <div className="flex items-center gap-4">
+              <LanguageSwitcher />
+              <div className="text-xs text-slate-500">
+                12-Position Rotary Tool Changer
+              </div>
             </div>
           </header>
 
@@ -135,6 +141,7 @@ export default function DashboardLayout({
           </footer>
         </div>
       </div>
-    </div>
+      </div>
+    </TranslationProvider>
   );
 }

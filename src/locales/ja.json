@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "読み込み中...",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "search": "検索",
+    "export": "エクスポート",
+    "import": "インポート",
+    "print": "印刷",
+    "analytics": "分析",
+    "configure": "ツール設定"
+  },
+  "dashboard": {
+    "title": "ToolMaster ダッシュボード",
+    "searchPlaceholder": "名前または説明でツールを検索...",
+    "loadingMagazine": "マガジンデータを読み込み中..."
+  },
+  "magazine": {
+    "inPosition": "IN 位置",
+    "outPosition": "OUT 位置",
+    "slot": "スロット",
+    "tool": "ツール",
+    "toolName": "ツール名",
+    "type": "タイプ",
+    "description": "説明",
+    "status": "ステータス",
+    "life": "寿命",
+    "position": "位置",
+    "magazineOverview": "マガジン概要",
+    "toolList": "ツールリスト",
+    "totalTools": "合計ツール",
+    "currentTool": "現在のツール"
+  },
+  "rotation": {
+    "rotateCW": "時計回り",
+    "rotateCCW": "反時計回り",
+    "goToSlot": "スロットへ移動",
+    "rotatedTo": "スロットに回転"
+  },
+  "status": {
+    "ready": "準備完了",
+    "active": "アクティブ",
+    "warning": "警告",
+    "empty": "空",
+    "maintenance": "メンテナンス"
+  },
+  "toolConfig": {
+    "title": "ツール設定",
+    "slotNumber": "スロット番号",
+    "toolNumber": "ツール番号",
+    "toolName": "ツール名",
+    "toolType": "ツールタイプ",
+    "toolDescription": "説明",
+    "toolStatus": "ステータス",
+    "toolLife": "ツール寿命 (%)",
+    "updateSuccess": "ツールを更新しました",
+    "updateFailed": "ツールの更新に失敗しました"
+  },
+  "report": {
+    "toolReport": "ツールマガジンレポート",
+    "reportDate": "レポート日付",
+    "generatedBy": "生成者",
+    "printedOn": "印刷日",
+    "page": "ページ"
+  },
+  "toast": {
+    "exportSuccess": "設定をエクスポートしました",
+    "exportFailed": "エクスポートに失敗しました",
+    "importSuccess": "設定をインポートしました",
+    "importFailed": "インポートに失敗しました",
+    "loadFailed": "データの読み込みに失敗しました",
+    "saveFailed": "回転の保存に失敗しました"
+  }
+}

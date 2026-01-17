@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "search": "Suchen",
+    "export": "Exportieren",
+    "import": "Importieren",
+    "print": "Drucken",
+    "analytics": "Analytik",
+    "configure": "Werkzeuge Konfigurieren"
+  },
+  "dashboard": {
+    "title": "ToolMaster Dashboard",
+    "searchPlaceholder": "Werkzeuge nach Name oder Besch. suchen...",
+    "loadingMagazine": "Lade Magazindaten..."
+  },
+  "magazine": {
+    "inPosition": "IN Position",
+    "outPosition": "OUT Position",
+    "slot": "Platz",
+    "tool": "Werkzeug",
+    "toolName": "Werkzeugname",
+    "type": "Typ",
+    "description": "Beschreibung",
+    "status": "Status",
+    "life": "Lebensdauer",
+    "position": "Position",
+    "magazineOverview": "Magazinübersicht",
+    "toolList": "Werkzeugliste",
+    "totalTools": "Gesamt Werkzeuge",
+    "currentTool": "Aktuelles Werkzeug"
+  },
+  "rotation": {
+    "rotateCW": "Drehen CW",
+    "rotateCCW": "Drehen CCW",
+    "goToSlot": "GEHE zu Platz",
+    "rotatedTo": "Gedreht zu Platz"
+  },
+  "status": {
+    "ready": "Bereit",
+    "active": "Aktiv",
+    "warning": "Warnung",
+    "empty": "Leer",
+    "maintenance": "Wartung"
+  },
+  "toolConfig": {
+    "title": "Werkzeugkonfiguration",
+    "slotNumber": "Platznummer",
+    "toolNumber": "Werkzeugnummer",
+    "toolName": "Werkzeugname",
+    "toolType": "Werkzeugtyp",
+    "toolDescription": "Beschreibung",
+    "toolStatus": "Status",
+    "toolLife": "Werkzeuglebensdauer (%)",
+    "updateSuccess": "Werkzeug erfolgreich aktualisiert",
+    "updateFailed": "Aktualisierung fehlgeschlagen"
+  },
+  "report": {
+    "toolReport": "Werkzeugmagazin Bericht",
+    "reportDate": "Berichtsdatum",
+    "generatedBy": "Generiert von",
+    "printedOn": "Gedruckt am",
+    "page": "Seite"
+  },
+  "toast": {
+    "exportSuccess": "Konfiguration exportiert",
+    "exportFailed": "Export fehlgeschlagen",
+    "importSuccess": "Konfiguration erfolgreich importiert",
+    "importFailed": "Import fehlgeschlagen",
+    "loadFailed": "Laden der Magazindaten fehlgeschlagen",
+    "saveFailed": "Speichern der Drehung fehlgeschlagen"
+  }
+}

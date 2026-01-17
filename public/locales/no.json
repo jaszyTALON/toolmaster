@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Laster inn...",
+    "save": "Lagre",
+    "cancel": "Avbryt",
+    "delete": "Slett",
+    "edit": "Rediger",
+    "search": "Søk",
+    "export": "Eksporter",
+    "import": "Importer",
+    "print": "Skriv ut",
+    "analytics": "Analyse",
+    "configure": "Konfigurer verktøy"
+  },
+  "dashboard": {
+    "title": "ToolMaster instrumentbord",
+    "searchPlaceholder": "Søk verktøy etter navn eller beskrivelse...",
+    "loadingMagazine": "Laster magasindataene..."
+  },
+  "magazine": {
+    "inPosition": "IN posisjon",
+    "outPosition": "OUT posisjon",
+    "slot": "Slot",
+    "tool": "Verktøy",
+    "toolName": "Verktøynavn",
+    "type": "Type",
+    "description": "Beskrivelse",
+    "status": "Status",
+    "life": "Levetid",
+    "position": "Posisjon",
+    "magazineOverview": "Magasinoversikt",
+    "toolList": "Verktøyliste",
+    "totalTools": "Totalt verktøy",
+    "currentTool": "Gjeldende verktøy"
+  },
+  "rotation": {
+    "rotateCW": "Roter med klokken",
+    "rotateCCW": "Roter mot klokken",
+    "goToSlot": "GÅ til slot",
+    "rotatedTo": "Rotert til slot"
+  },
+  "status": {
+    "ready": "Klar",
+    "active": "Aktiv",
+    "warning": "Advarsel",
+    "empty": "Tom",
+    "maintenance": "Vedlikehold"
+  },
+  "toolConfig": {
+    "title": "Verktøykonfiguration",
+    "slotNumber": "Slotnummer",
+    "toolNumber": "Verktøynummer",
+    "toolName": "Verktøynavn",
+    "toolType": "Verktøytype",
+    "toolDescription": "Beskrivelse",
+    "toolStatus": "Status",
+    "toolLife": "Verktøylevetid (%)",
+    "updateSuccess": "Verktøy oppdatert",
+    "updateFailed": "Oppdatering av verktøy mislyktes"
+  },
+  "report": {
+    "toolReport": "Magasinrapport",
+    "reportDate": "Rapportdato",
+    "generatedBy": "Generert av",
+    "printedOn": "Skrevet ut den",
+    "page": "Side"
+  },
+  "toast": {
+    "exportSuccess": "Konfigurasjon eksportert",
+    "exportFailed": "Eksport mislyktes",
+    "importSuccess": "Konfigurasjon importert",
+    "importFailed": "Import mislyktes",
+    "loadFailed": "Lasting av data mislyktes",
+    "saveFailed": "Lagring av rotasjon mislyktes"
+  }
+}

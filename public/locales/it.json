@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "search": "Cerca",
+    "export": "Esporta",
+    "import": "Importa",
+    "print": "Stampa",
+    "analytics": "Analitica",
+    "configure": "Configura Strumenti"
+  },
+  "dashboard": {
+    "title": "Dashboard ToolMaster",
+    "searchPlaceholder": "Cerca strumenti per nome o desc...",
+    "loadingMagazine": "Caricamento dati magazzino..."
+  },
+  "magazine": {
+    "inPosition": "Posizione IN",
+    "outPosition": "Posizione OUT",
+    "slot": "Slot",
+    "tool": "Strumento",
+    "toolName": "Nome Strumento",
+    "type": "Tipo",
+    "description": "Descrizione",
+    "status": "Stato",
+    "life": "Vita",
+    "position": "Posizione",
+    "magazineOverview": "Panoramica Magazzino",
+    "toolList": "Elenco Strumenti",
+    "totalTools": "Strumenti Totali",
+    "currentTool": "Strumento Corrente"
+  },
+  "rotation": {
+    "rotateCW": "Ruota CW",
+    "rotateCCW": "Ruota CCW",
+    "goToSlot": "VAI a Slot",
+    "rotatedTo": "Ruotato allo slot"
+  },
+  "status": {
+    "ready": "Pronto",
+    "active": "Attivo",
+    "warning": "Avviso",
+    "empty": "Vuoto",
+    "maintenance": "Manutenzione"
+  },
+  "toolConfig": {
+    "title": "Configurazione Strumento",
+    "slotNumber": "Numero Slot",
+    "toolNumber": "Numero Strumento",
+    "toolName": "Nome Strumento",
+    "toolType": "Tipo Strumento",
+    "toolDescription": "Descrizione",
+    "toolStatus": "Stato",
+    "toolLife": "Vita Strumento (%)",
+    "updateSuccess": "Strumento aggiornato con successo",
+    "updateFailed": "Aggiornamento strumento fallito"
+  },
+  "report": {
+    "toolReport": "Rapporto Magazzino Strumenti",
+    "reportDate": "Data Rapporto",
+    "generatedBy": "Generato da",
+    "printedOn": "Stampato il",
+    "page": "Pagina"
+  },
+  "toast": {
+    "exportSuccess": "Configurazione esportata",
+    "exportFailed": "Esportazione fallita",
+    "importSuccess": "Configurazione importata con successo",
+    "importFailed": "Importazione fallita",
+    "loadFailed": "Caricamento dati fallito",
+    "saveFailed": "Salvataggio rotazione fallito"
+  }
+}

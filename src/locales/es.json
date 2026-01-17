@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "Cargando...",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "search": "Buscar",
+    "export": "Exportar",
+    "import": "Importar",
+    "print": "Imprimir",
+    "analytics": "Analítica",
+    "configure": "Configurar Herramientas"
+  },
+  "dashboard": {
+    "title": "Panel de ToolMaster",
+    "searchPlaceholder": "Buscar herramientas por nombre o desc...",
+    "loadingMagazine": "Cargando datos del magazine..."
+  },
+  "magazine": {
+    "inPosition": "Posición IN",
+    "outPosition": "Posición OUT",
+    "slot": "Ranura",
+    "tool": "Herramienta",
+    "toolName": "Nombre de Herramienta",
+    "type": "Tipo",
+    "description": "Descripción",
+    "status": "Estado",
+    "life": "Vida",
+    "position": "Posición",
+    "magazineOverview": "Vista General del Magazine",
+    "toolList": "Lista de Herramientas",
+    "totalTools": "Total Herramientas",
+    "currentTool": "Herramienta Actual"
+  },
+  "rotation": {
+    "rotateCW": "Girar CW",
+    "rotateCCW": "Girar CCW",
+    "goToSlot": "IR a Ranura",
+    "rotatedTo": "Girado a ranura"
+  },
+  "status": {
+    "ready": "Listo",
+    "active": "Activo",
+    "warning": "Advertencia",
+    "empty": "Vacío",
+    "maintenance": "Mantenimiento"
+  },
+  "toolConfig": {
+    "title": "Configuración de Herramienta",
+    "slotNumber": "Número de Ranura",
+    "toolNumber": "Número de Herramienta",
+    "toolName": "Nombre de Herramienta",
+    "toolType": "Tipo de Herramienta",
+    "toolDescription": "Descripción",
+    "toolStatus": "Estado",
+    "toolLife": "Vida de Herramienta (%)",
+    "updateSuccess": "Herramienta actualizada exitosamente",
+    "updateFailed": "Error al actualizar herramienta"
+  },
+  "report": {
+    "toolReport": "Reporte de Magazine de Herramientas",
+    "reportDate": "Fecha del Reporte",
+    "generatedBy": "Generado por",
+    "printedOn": "Impreso el",
+    "page": "Página"
+  },
+  "toast": {
+    "exportSuccess": "Configuración exportada",
+    "exportFailed": "Error al exportar configuración",
+    "importSuccess": "Configuración importada exitosamente",
+    "importFailed": "Error al importar configuración",
+    "loadFailed": "Error al cargar datos del magazine",
+    "saveFailed": "Error al guardar rotación"
+  }
+}

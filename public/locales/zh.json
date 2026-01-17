@@ -1,0 +1,76 @@
+{
+  "common": {
+    "loading": "加载中...",
+    "save": "保存",
+    "cancel": "取消",
+    "delete": "删除",
+    "edit": "编辑",
+    "search": "搜索",
+    "export": "导出",
+    "import": "导入",
+    "print": "打印",
+    "analytics": "分析",
+    "configure": "配置工具"
+  },
+  "dashboard": {
+    "title": "ToolMaster 仪表板",
+    "searchPlaceholder": "按名称或描述搜索工具...",
+    "loadingMagazine": "加载刀库数据..."
+  },
+  "magazine": {
+    "inPosition": "IN 位置",
+    "outPosition": "OUT 位置",
+    "slot": "槽位",
+    "tool": "工具",
+    "toolName": "工具名称",
+    "type": "类型",
+    "description": "描述",
+    "status": "状态",
+    "life": "寿命",
+    "position": "位置",
+    "magazineOverview": "刀库概览",
+    "toolList": "工具列表",
+    "totalTools": "总工具数",
+    "currentTool": "当前工具"
+  },
+  "rotation": {
+    "rotateCW": "顺时针旋转",
+    "rotateCCW": "逆时针旋转",
+    "goToSlot": "转到槽位",
+    "rotatedTo": "已转到槽位"
+  },
+  "status": {
+    "ready": "就绪",
+    "active": "活动",
+    "warning": "警告",
+    "empty": "空",
+    "maintenance": "维护"
+  },
+  "toolConfig": {
+    "title": "工具配置",
+    "slotNumber": "槽位号",
+    "toolNumber": "工具号",
+    "toolName": "工具名称",
+    "toolType": "工具类型",
+    "toolDescription": "描述",
+    "toolStatus": "状态",
+    "toolLife": "工具寿命 (%)",
+    "updateSuccess": "工具更新成功",
+    "updateFailed": "工具更新失败"
+  },
+  "report": {
+    "toolReport": "刀库报告",
+    "reportDate": "报告日期",
+    "generatedBy": "生成者",
+    "printedOn": "打印于",
+    "page": "页"
+  },
+  "toast": {
+    "exportSuccess": "配置已导出",
+    "exportFailed": "导出配置失败",
+    "importSuccess": "配置导入成功",
+    "importFailed": "导入配置失败",
+    "loadFailed": "加载刀库数据失败",
+    "saveFailed": "保存旋转失败"
+  }
+}
